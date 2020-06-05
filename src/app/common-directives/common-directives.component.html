@@ -3,6 +3,9 @@
     <div *ngFor="let user of users" [ngClass]="'one two'">
         {{user.name}} is {{user.age}} years old.
     </div>
+    <p class="source-code-pro text-justify">
+        To bind CSS class to <b>NgClass</b>, just create a string and inside it you need to refer the CSS class names enclosed by single quote ('). 
+    </p>
     <p [ngClass]="['one', 'two']">
         Using NgClass with Array.
     </p>
