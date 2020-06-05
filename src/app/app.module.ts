@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SalesPersonListComponent } from './sales-person-list/sales-person-list.component';
+import { CommonDirectivesComponent } from './common-directives/common-directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SalesPersonListComponent
+    SalesPersonListComponent,
+    CommonDirectivesComponent
   ],
   imports: [
     BrowserModule,
