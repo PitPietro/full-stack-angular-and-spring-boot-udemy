@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "full-stack-angular-and-spring-boot-udemy"
+    }
+  },
+  "defaultProject": "full-stack-angular-and-spring-boot-udemy",
+  "cli": {
+    "analytics": false
+  }
 }
