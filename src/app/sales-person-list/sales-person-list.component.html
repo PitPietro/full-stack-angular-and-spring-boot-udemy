@@ -1,5 +1,5 @@
-<table>
-    <thead>
+<table class="table table-hover">
+    <thead class="thead-dark">
         <th>
             First Name
         </th>
@@ -12,6 +12,9 @@
         <th>
             Sales volume
         </th>
+        <th>
+            sales > 60000
+        </th>
     </thead>
     <tbody>
         <tr *ngFor="let tempSales of salesList">
@@ -19,6 +22,12 @@
             <td> {{ tempSales.lastName }}</td>
             <td> {{ tempSales.email }}</td>
             <td> {{ tempSales.salesVolume }}</td>
+            <td>
+                <div *ngIf="tempSales.salesVolume >= 60000; else elseDiv">
+                    Yes
+                </div>
+                <ng-template #elseDiv>NO</ng-template>
+            </td>
         </tr>
     </tbody>
 </table>
