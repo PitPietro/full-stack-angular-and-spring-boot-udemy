@@ -4,7 +4,10 @@ import { SalesPerson } from './sales-person';
 @Component({
   selector: 'app-sales-person-list',
   templateUrl: './sales-person-list.component.html',
-  styleUrls: ['./sales-person-list.component.scss']
+  styleUrls: [
+    './sales-person-list.component.scss',
+    '../app.component.scss'
+  ]
 })
 export class SalesPersonListComponent implements OnInit {
 
