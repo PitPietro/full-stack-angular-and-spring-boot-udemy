@@ -4,7 +4,9 @@ import { User } from './user';
 @Component({
   selector: 'app-common-directives',
   templateUrl: './common-directives.component.html',
-  styleUrls: ['./common-directives.component.scss']
+  styleUrls: [
+    './common-directives.component.scss',
+    '../app.component.scss']
 })
 export class CommonDirectivesComponent implements OnInit {
   users: User[] = [];
