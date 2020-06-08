@@ -21,7 +21,7 @@
             <td> {{ tempSales.firstName }}</td>
             <td> {{ tempSales.lastName }}</td>
             <td> {{ tempSales.email }}</td>
-            <td class="source-code-pro"> {{ tempSales.salesVolume }}</td>
+            <td class="source-code-pro"> {{ tempSales.salesVolume | currency: 'EUR' }}</td>
             <td>
                 <div *ngIf="tempSales.salesVolume >= 60000; else elseDiv">
                     Yes
@@ -31,3 +31,6 @@
         </tr>
     </tbody>
 </table>
+<!--
+    https://angular.io/api/common/CurrencyPipe use the ISO 4217 code to identify the currency (https://en.wikipedia.org/wiki/ISO_4217).
+-->
